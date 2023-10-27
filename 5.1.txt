@@ -1,0 +1,25 @@
+#include <iostream> 
+using namespace std;
+int main() {
+	setlocale(0, "");
+	int chislo;
+	int sum = 0,pr=1;
+	cout << "Введите целое число: ";
+	cin >> chislo;
+	
+	
+	while (chislo != 0)
+	{
+		sum += chislo % 10;
+		pr *= chislo % 10;
+		
+		chislo /= 10;
+	}
+	
+	
+
+	cout << "Сумма цифр числа: " << sum << endl;
+	cout << "Произведение цифр числа: " << pr << endl;
+	return 0;
+}
+

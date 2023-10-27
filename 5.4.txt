@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+    double sum = 0;
+    int MASSIV[5] = { 3,5,6,8,10 };
+    cout << MASSIV[0] << "\n" << MASSIV[1] << "\n" << MASSIV[2] << "\n" << MASSIV[3] << "\n" << MASSIV[4] << "\n";
+    for (int i = 0; i < 5; i++) {
+        sum += MASSIV[i];
+    }
+    cout << sum/5;
+    return 0;
+}
